@@ -1,0 +1,219 @@
+body{
+  background-color: white;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(NeueMontrealMedium.otf);
+
+}
+
+
+.navbar{
+  display:flex;
+  background-color:rgba(232, 229, 228, 0.5);
+  align-items:center;
+  justify-content: center;
+  width:21%;
+  margin:25px auto;
+  border-radius: 25px;
+}
+
+.nav{
+  padding: 10px 20px 10px 20px;
+  margin: 5px 10px;
+  font-size: 16px;
+  border-radius:25px;
+  line-height: 1.2rem;
+  font-family: myFont;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.nav:hover{
+  background-color:white;
+}
+
+.heading1{
+  /* for the block that contains the heading and the unordered list below it */
+  display:block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.mains{
+  /* for the main heading */
+     font-family: myFont;
+     font-size: 4.5rem;
+     text-align: center;
+     line-height: 1.3;
+     font-style: normal;
+     margin: 70px auto 50px;
+}
+
+.hehe > ul > li{
+  /*for list items below the heading  */
+  font-family: myFont;
+  font-weight: lighter;
+  list-style-type: none;
+  font-size: 14px;
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  padding:7px 10px;
+  background-color:rgba(232, 229, 228, 0.5);
+  border-radius:20px;
+}
+
+.hehe > ul > li:hover{
+  background-color:white;
+}
+
+.hehe{
+  text-align: center;
+}
+
+.wrapper-grids{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  margin: 0 15px;
+  gap:35px 23px;
+  justify-content: center;
+  /* grid-template-rows: 1fr; */
+}
+
+.pictures{
+  width:90%;
+  margin:0 5% 0 5%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  height:450px;
+  width:600px;
+  border-radius:18px;
+  object-fit: cover;
+}
+
+.a{
+  /* text over image, try and make it appear on hover */
+  position:absolute;
+  visibility: hidden;
+  color:white;
+  font-size:50px;
+}
+
+img:hover{
+  filter:blur(5px);
+}
+
+.grid1{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading3{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 135px auto;
+}
+
+.design{
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: myFont;
+  font-weight: normal;
+  font-size:45px;
+  margin-top:8px;
+  margin-bottom: 8px;
+
+}
+
+span{
+  color:grey;
+}
+
+.footer1 > p{
+  position:relative;
+  left:50px;
+  top:35px;
+  font-family: myFont;
+}
+
+.links >a{
+  font-family: myFont;
+  font-size: 14px;
+  margin: 0 12px;
+  color:black;
+  text-decoration: none;
+}
+
+.links{
+  margin-bottom: 50px;
+  display:flex;
+  justify-content:flex-end;
+  position: relative;
+  right:30px;
+}
+
+/* media starts here */
+
+@media screen and (max-width:600px){
+  .navbar{
+    width:71%;
+  }
+  .mains{
+    /* for the main heading */
+       font-family: myFont;
+       font-size: 2.9rem;
+       margin: 60px auto 45px;
+  }
+  .hehe > ul > li{
+    /*for list items below the heading  */
+    font-size: 12px;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+    padding:7px 10px;
+    background-color:rgba(232, 229, 228, 0.5);
+    border-radius:20px;
+  }
+
+  .wrapper-grids{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  img{
+    height:250px;
+    width:300px;
+    border-radius:18px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:1200px){
+  .mains{
+    /* for the main heading */
+       font-family: myFont;
+       font-size: 3.7rem;
+       margin: 60px auto 45px;
+  }
+  .navbar{
+    width:51%;
+  }
+  img{
+    height:450px;
+    width:600px;
+  }
+  .wrapper-grids{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
