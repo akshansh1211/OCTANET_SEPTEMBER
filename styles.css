@@ -188,11 +188,11 @@ span{
 
   .wrapper-grids{
     display:grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
   }
   img{
-    height:250px;
-    width:300px;
+    height:150px;
+    width:200px;
     border-radius:18px;
     object-fit: cover;
   }
@@ -209,11 +209,11 @@ span{
     width:51%;
   }
   img{
-    height:450px;
-    width:600px;
+    height:225px;
+    width:325px;
   }
   .wrapper-grids{
     display:grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
   }
 }
