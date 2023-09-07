@@ -1,2 +1,2 @@
-# OH.STUDIO-parody-
-Found a website on the web and wanted to recreate it for practice.
+# Landing page
+Created a landing page
